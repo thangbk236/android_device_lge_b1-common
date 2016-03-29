@@ -38,7 +38,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=b1 user_debug=31
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x0008000 --ramdisk_offset 0x2000000 
+BOARD_MKBOOTIMG_ARGS := --tags_offset 0x00000100 --kernel_offset 0x0008000 --ramdisk_offset 0x2000000 
 TARGET_KERNEL_SOURCE := kernel/lge/msm8974
 
 # Audio
